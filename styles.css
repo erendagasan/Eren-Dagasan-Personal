@@ -27,14 +27,15 @@ body {
 
 .top-container .cloud1 {
     position: absolute;
-    left: 35%;
-    top: 35%;
+    height: auto;
+    left: 25%;
+    top: 30%;
     z-index: -1;
 }
 
 .top-container .cloud2 {
     position: absolute;
-    display: inline;
+    height: auto;
     z-index: -1;
     top: 25%;
     left: 55%;    
@@ -60,11 +61,13 @@ body {
 
 .middle-container .graphic-designer {
     display: block;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
     width: 180px;
     height: 180px;
+    transition: 250ms;
+
 }
 
 .bottom-container {
@@ -92,6 +95,7 @@ body {
     margin-right: auto;
     width: 40%;
     height: auto;
+    margin-bottom: 8%;
 }
 
 .bottom-container .skill2-content {
@@ -99,7 +103,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    padding-bottom: 1%;
 }
 
 .bottom-container .skill1-h2 {
@@ -155,6 +158,7 @@ body {
   }
 
   .bottom-container .skill1 img {
+    transition: 250ms;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -223,46 +227,107 @@ body {
     margin-right: auto;
 }
 
-button {
-    border-radius: 100px;
-    text-decoration: none;
-    background-color: #ff0077;
-    border: none;
-    margin-top: 8%;
-    position: relative;
+.message img {
+    transition: 250ms;
     display: block;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
+    width: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+.button {
+    margin-top: 8%;
+    width: 200px;
     height: 80px;
-}
-
-button a {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 100px;
+    color: #BCE6EB;
     text-decoration: none;
-    color: white;
-    font-size: large;
-    font-weight: bold;
+    background-color: #e01a77;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-button:hover {
-    transition: 200ms;
+.button:hover {
+    transition: 200ms ease-in-out;
     background-color: white;
+    color: #e01a77;
 }
 
-button:hover a {
-    color: #d43d84;
-}
 
 @media screen and (max-width: 600px) {
-    button {
-        margin-top: 15%;
+    .button {
+        transition: 200ms;
+        margin-top: 10%;
         width: 130px;
         height: 45px;
+        font-size: small;
+    }
+    .message {
+        width: fit-content;
+        text-align: center;
     }
 
-    button a {
-        font-size: small;
+    .middle-container {
+        width: fit-content;
+        text-align: center;
+    }
+    .middle-container .hello {
+        width: fit-content;
+        text-align: center;
+    }
+    .middle-container .graphic-designer{
+        transition: 250ms;
+        width: 120px;
+        height: 120px;
+    }
+
+    .bottom-container .skill1 img {
+        transition: 250ms;
+        width: 120px;
+        height: 120px;
+    }
+    .bottom-container .skill2 img {
+        transition: 250ms;
+        width: 120px;
+        height: 120px;
+    }
+    .bottom-container .skill1-content{
+        width: fit-content;
+        text-align: center;
+    }
+    .bottom-container .skill2-content{
+        width: fit-content;
+        text-align: center;
+    }
+    .bottom-container .skill1-h2{
+        width: fit-content;
+        text-align: center;
+    }
+    .bottom-container .skill2-h2 {
+        width: fit-content;
+        text-align: center;
+    }
+    .top-container .cloud1 {
+        transition: 250ms;
+        width: 50px;
+        height: 16px;
+    }
+    .top-container .cloud2 {
+        transition: 250ms;
+        width: 50px;
+        height: 16px;
+    }
+    .message img {
+        transition: 250ms;
+        width: 120px;
+        height: 120px;
     }
 }
 
